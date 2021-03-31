@@ -6,7 +6,7 @@ layout: post
 title: "[리뷰] 가짜뉴스의 심리학"  
 subtitle: "결코 아니라고 생각하지만 나 또한 믿기 쉬운"  
 categories: dev  
-tags: test book 심리학 가짜뉴스 데이터 AI 통계 객관성 팩트 정확성 공정 인지적편향 케이스  
+tags: competition list
 comments: true  
 header-img: img/review/review-book-the-psychology-of-fake-news-1.png
 ---  
