@@ -13,7 +13,7 @@ url:                 https://AIWithDaddy.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             "A small space for sharing and communicating with"
+tagline:             "Enjoy your journey!"
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -26,7 +26,7 @@ author:
   email:             ai.with.daddyW@gmail.com
 
 # Fallback image and color
-image:               /assets/img/main_left.jpg
+image:               /assets/img/Sausalito.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
