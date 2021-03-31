@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "[Competition] DCASE2021"
-subtitle:   "DCASE2012"
+title: '[Competition] DCASE2021'
+subtitle: DCASE2012
 categories: dev
 tags: competition ASD
 comments: true
+published: true
 ---
 
-http://dcase.community/challenge2021/index
+[DCASE2021](http://dcase.community/challenge2021/index)
