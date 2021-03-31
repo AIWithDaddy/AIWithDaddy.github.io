@@ -2,27 +2,27 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
 theorydb:
-  name:              min
-  email:             theorydb@gmail.com
+  name:              Tim
+  email:             ai.with.daddy@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Data science enthusiast and addict :)
+    Research Scientist
 
   # This photo will be used in the about section
   picture:
-    src:             /assets/img/me.jpg
+    src:             /assets/img/MV.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/me.jpg
-      2x:            /assets/img/me.jpg
+      1x:            /assets/img/MV.jpg
+      2x:            /assets/img/MV.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        cantouchmin
+    #facebook:        <username>
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -46,7 +46,7 @@ theorydb:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    github:          theorydb
+    github:          AIWithDaddy
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
@@ -57,8 +57,8 @@ theorydb:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:theorydb@gmail.com
-    rss:             https://theorydb.github.io/feed.xml
+    email:           mailto:ai.with.daddy@gmail.com
+    #rss:             https://AIWithDaddy.github.io/feed.xml
 
 # Another author
 mdo:
