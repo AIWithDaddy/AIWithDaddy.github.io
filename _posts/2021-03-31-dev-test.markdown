@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title:  "[Competition] 데이터 과학 경진대회 사이트 모음"
 subtitle:   "데이터 과학 경진대회 사이트 모음"
