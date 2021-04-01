@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: '[참고] DCASE2020 Task2'
 subtitle: DCASE2010 Task2
