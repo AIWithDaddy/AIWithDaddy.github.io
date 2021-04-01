@@ -5,7 +5,6 @@ subtitle: DCASE2010 Task2
 categories: dev
 tags: ML, ASD
 comments: true
-published: true
 ---
 **1. DCASE**
 
