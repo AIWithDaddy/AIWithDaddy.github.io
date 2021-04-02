@@ -16,7 +16,7 @@ DCASE2020 Task2 경연에서 1위, 3위에 위치한 팀의 연구 내용을 간
 2) [연구 보고서](http://dcase.community/documents/challenge2020/technical_reports/DCASE2020_Giri_103_t2.pdf){:target="_blank"}
 
 3) 연구 주요 내용
-  - 
+  - 밀도 평가(denstiy estimation)에 기반한 이상 탐지기인 GMADE(Group Masked Autoencoder for Density Estimation)와 자기 지도 분류(Self-supervised classification) 기반의 이상 탐지기의 앙상블을 이용
 
 **2. 3위 팀**
 
@@ -25,6 +25,6 @@ DCASE2020 Task2 경연에서 1위, 3위에 위치한 팀의 연구 내용을 간
 2) [연구 보고서](http://dcase.community/documents/challenge2020/technical_reports/DCASE2020_Primus_36_t2.pdf){:target="_blank"}
 
 3) 연구 주요 내용
-  - A
+  - Outlier-exposed classifier 개념
 
-3) [구현 코드 Repository](https://github.com/CN-BOTK/dcase2020_task2){:target="_blank"}
+4) [구현 코드 Repository](https://github.com/CN-BOTK/dcase2020_task2){:target="_blank"}
