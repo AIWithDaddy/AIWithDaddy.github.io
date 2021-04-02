@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[참고] DCASE2020 Task2'
+title: '[참고] DCASE2020 Task2 #1'
 subtitle: DCASE2010 Task2
 categories: dev
 tags: ml ASD
@@ -18,14 +18,23 @@ DCASE는 Detection and Classification of Acoustic Scenes and Events의 약자로
 1) 경연 명: 장비 상태 모니터링을 위한 비정상 소리의 비지도 탐지 (Unsupervised Detection of Anomalous Sounds for Machine Condition Monitoring)
 
 2) 경연 개요
-- ASD(Anomalous Sound Detection)은 대상 장비에서 나오는 소리가 정상(normal)인지, 비정상(anomalous)인지를 분별하는 작업이다.
-- 본 작업에 있어서 핵심적인 도전은 정상 소리 샘플들만이 학습 데이터로 제공되는 상황에서 알려지지 않은(해당 샘플이 없는) 비정상 소리를 찾아내는 것이다. --> 현업/고객 환경은 사실 이와 같은 환경이다. 비정상 소리는 매우 드물게 발생하고 매우 다양(diverse)하다.
+  - ASD(Anomalous Sound Detection)은 대상 장비에서 나오는 소리가 정상(normal)인지, 비정상(anomalous)인지를 분별하는 작업이다.
+  - 본 작업에 있어서 핵심적인 도전은 정상 소리 샘플들만이 학습 데이터로 제공되는 상황에서 알려지지 않은(해당 샘플이 없는) 비정상 소리를 찾아내는 것이다. --> 현업/고객 환경은 사실 이와 같은 환경이다. 비정상 소리는 매우 드물게 발생하고 매우 다양(diverse)하다.
 
 3) 데이터셋
-- 본 경연에 사용된 데이터셋은 ToyADMOS와 MIMII 2개의 데이터셋을 합친 것이다.
-- ToyADMOS --> Toy-car, Toy-conveyor ([해당 데이터셋에 대한 설명 자료](https://ieeexplore.ieee.org/document/8937164))
-- MIMII --> Valve, Pump, Fan, Slide ([해당 데이터셋에 대한 설명 자료](http://dcase.community/documents/workshop2019/proceedings/DCASE2019Workshop_Purohit_21.pdf))
-- 대상 장비의 소리를 배경 소음(environmental noise, 실제 공장에서 녹음된 소음)와 합쳐서 학습과 테스트 데이터로 제공
+  - 본 경연에 사용된 데이터셋은 ToyADMOS와 MIMII 2개의 데이터셋을 합친 것이다.
+  - ToyADMOS --> Toy-car, Toy-conveyor ([해당 데이터셋에 대한 설명 자료](https://ieeexplore.ieee.org/document/8937164){:target="_blank"})
+  - MIMII --> Valve, Pump, Fan, Slide ([해당 데이터셋에 대한 설명 자료](http://dcase.community/documents/workshop2019/proceedings/DCASE2019Workshop_Purohit_21.pdf){:target="_blank"})
+  - 대상 장비의 동작 소리(operating sound)를 배경 소음(environmental noise, 실제 공장에서 녹음된 소음)와 합쳐서 학습과 테스트 데이터로 제공
 
 ![데이터셋 전체의 개요](https://AIWithDaddy.github.io/assets/img/dev/ml/2021-04-01-dev-ml-dcase2020.jpg)  
 
+  - 데이테셋은 총 6개의 장비 종류에 대한 데이터이며 장비 종류 별로 다른 ID를 가지는 장비들의 데이터가 포함되어 있다.
+  - 개발을 위한 데이터셋(development dataset)은 학습 데이터와 테스트 데이터로 구성되어 있는데, 학습 데이터에는 1000개 정도의 정상 소리 데이터가, 테스트 데이터에는 100에서 200개의 정상, 비정상 소리 데이터가 포함되어 있다.
+  - [개발을 위한 데이터셋 다운로드](https://zenodo.org/record/3678171#.YGZ4L7BxeUk){:target="_blank"}
+
+4) [Baseline 구현 Repository](https://github.com/y-kawagu/dcase2020_task2_baseline){:target="_blank"}
+
+**3. 경연 결과**
+  - [경연 결과 페이지](http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds-results){:target="_blank"}
+  - [경연 결과에 대한 설명 자료](https://arxiv.org/pdf/2006.05822.pdf){:target="_blank"}
