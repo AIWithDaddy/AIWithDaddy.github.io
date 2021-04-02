@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[참고] DCASE2020 Task2 #1'
+title: '[참고] DCASE2020 Task2 #1 - 경연 개요'
 subtitle: DCASE2010 Task2
 categories: dev
 tags: ml ASD
