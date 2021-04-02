@@ -31,4 +31,4 @@ DCASE2020 Task2 경연에서 1위, 3위에 위치한 팀의 연구 내용을 간
   
   - Outlier에 해당하는 데이터를 구하는 것은 비정상 데이터를 구하는 것에 비해 용이함
 
-4) [구현 코드 Repository](https://github.com/CN-BOTK/dcase2020_task2){:target="_blank"}
+4) [구현 코드 Repository](https://github.com/OptimusPrimus/dcase2020_task2){:target="_blank"}
