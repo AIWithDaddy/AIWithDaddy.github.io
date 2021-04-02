@@ -10,9 +10,9 @@ comments: true
 
 DCASE는 Detection and Classification of Acoustic Scenes and Events의 약자로 매년(언제부터 시작된 것인지는 확인하지 않음 ^^) 경연대회(Challenge)를 개최하고 있다.
 
-그중 이번 글은 [DCASE2020 Challenge](http://dcase.community/challenge2020/index), 그 중에서도 Task2에 대한 내용을 정리하고자 한다.
+그중 이번 글은 [DCASE2020 Challenge](http://dcase.community/challenge2020/index){:target="_blank"}, 그 중에서도 Task2에 대한 내용을 정리하고자 한다.
 
-**2. [DCASE2020 Challege Task2](http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds)**
+**2. [DCASE2020 Challege Task2](http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds){:target="_blank"}**
 
 1) 경연 명: 장비 상태 모니터링을 위한 비정상 소리의 비지도 탐지 (Unsupervised Detection of Anomalous Sounds for Machine Condition Monitoring)
 
