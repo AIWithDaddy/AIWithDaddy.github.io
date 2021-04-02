@@ -1,0 +1,26 @@
+---
+layout: post
+title: '[참고] DCASE2020 Task2 #3 - 경연 상위 팀 연구 내용 정리'
+subtitle: DCASE2010 Task2 #3
+categories: dev
+tags: ml ASD
+comments: true
+published: true
+---
+DCASE2020 Task2 경연에서 1위, 3위에 위치한 팀의 연구 내용을 간단하게 정리하였다.
+
+**1위 팀 [DCASE2020 Challege Task2](http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds){:target="_blank"}**
+
+1) [연구 보고서](http://dcase.community/documents/challenge2020/technical_reports/DCASE2020_Giri_103_t2.pdf){:target="_blank"}
+
+2) 연구 주요 내용
+  - A
+
+**3위 팀**
+
+1) [연구 보고서](http://dcase.community/documents/challenge2020/technical_reports/DCASE2020_Primus_36_t2.pdf){:target="_blank"}
+
+2) 연구 주요 내용
+  - A
+
+3) [구현 코드 Repository](https://github.com/CN-BOTK/dcase2020_task2){:target="_blank"}
