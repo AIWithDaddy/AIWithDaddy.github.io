@@ -8,4 +8,4 @@ comments: true
 published: true
 ---
 
-[DCASE2021](http://dcase.community/challenge2021/index)
+[DCASE2021](http://dcase.community/challenge2021/index){:target="_blank"}
