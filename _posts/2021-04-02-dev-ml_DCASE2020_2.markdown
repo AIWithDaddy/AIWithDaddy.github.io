@@ -20,6 +20,6 @@ DCASE2020 Task2 Baseline 구현을 Colab을 이용해 실행해 본 예이다.
 ![데이터 업로드](https://AIWithDaddy.github.io/assets/img/dev/ml/2021-04-02-dev-ml-dcase2020_2_1.jpg)
 
 3) Colab에서 노트 실행하기 --> [DCASE2020_task2_baseline.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/DCASE2020_task2_baseline.ipynb){:target="_blank"}
-<참고 1> 노트가 실행되는 환경이 위 1), 2)의 환경(사용되는 구글 계정)이 일치해야 문제 없이 수행됨
-<참고 2> "내 드라이브"를 마운트하는 동작에서 인증 코드를 입력해야 함. 표시되는 URL을 클릭하고 진행하면 인증 코드를 얻을 수 있음
+- <참고 1> 노트가 실행되는 환경이 위 1), 2)의 환경(사용되는 구글 계정)이 일치해야 문제 없이 수행됨
+- <참고 2> "내 드라이브"를 마운트하는 동작에서 인증 코드를 입력해야 함. 표시되는 URL을 클릭하고 진행하면 인증 코드를 얻을 수 있음
 ![드라이브 마운트 인증 코드 입력](https://AIWithDaddy.github.io/assets/img/dev/ml/2021-04-02-dev-ml-dcase2020_2_2.jpg)
