@@ -16,3 +16,5 @@ DCASE2020 Task2 Baseline 구현을 Colab을 이용해 실행해 본 예이다.
 1) Baseline 코드를 구글 드라이브의 적당한 위치에 업로드한다. (예) 내 드라이브 > Test > dase2020
 
 2) 개발을 위한 데이터셋 중 slider 데이터를 1)의 위치의 dev_data 폴더에 업로드한다.
+
+![데이터 업로드](https://AIWithDaddy.github.io/assets/img/dev/ml/2021-04-02-dev-ml-dcase2020_2_1.jpg)
