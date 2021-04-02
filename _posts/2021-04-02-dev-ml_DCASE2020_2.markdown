@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[참고] DCASE2020 Task2 #2'
-subtitle: DCASE2010 Task2 #2
+title: '[참고] DCASE2020 Task2 #2 - Baseline 구현을 Colab을 이용해 실행해 본 예'
+subtitle: DCASE2010 Task2
 categories: dev
 tags: ml ASD
 comments: true
