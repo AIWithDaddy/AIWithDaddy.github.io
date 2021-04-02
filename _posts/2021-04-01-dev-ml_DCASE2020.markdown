@@ -25,7 +25,7 @@ DCASE는 Detection and Classification of Acoustic Scenes and Events의 약자로
 - 본 경연에 사용된 데이터셋은 ToyADMOS와 MIMII 2개의 데이터셋을 합친 것이다.
 - ToyADMOS --> Toy-car, Toy-conveyor ([해당 데이터셋에 대한 설명 자료](https://ieeexplore.ieee.org/document/8937164){:target="_blank"})
 - MIMII --> Valve, Pump, Fan, Slide ([해당 데이터셋에 대한 설명 자료](http://dcase.community/documents/workshop2019/proceedings/DCASE2019Workshop_Purohit_21.pdf){:target="_blank"})
-- 대상 장비의 소리를 배경 소음(environmental noise, 실제 공장에서 녹음된 소음)와 합쳐서 학습과 테스트 데이터로 제공
+- 대상 장비의 동작 소리(operating sound)를 배경 소음(environmental noise, 실제 공장에서 녹음된 소음)와 합쳐서 학습과 테스트 데이터로 제공
 
 ![데이터셋 전체의 개요](https://AIWithDaddy.github.io/assets/img/dev/ml/2021-04-01-dev-ml-dcase2020.jpg)  
 
