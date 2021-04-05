@@ -11,7 +11,8 @@ comments: true
 ---
 DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, Nagesh Singh Chauhan이 작성한 [Audio Data Analysis Using Deep Learning with Python (Part 1)](https://www.kdnuggets.com/2020/02/audio-data-analysis-deep-learning-python-part-1.html){:target="_blank"}의 내용을 기반으로 작성된 것이다.
 
-**예제 코드**
+**예제 코드** Colab에서 실행 --> [Audio_Data_Analysis_Ex_1.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_1.ipynb){:target="_blank"}
+
 > import os, shutil
 > from google.colab import drive
 > drive.mount('/content/gdrive')
@@ -35,4 +36,4 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > plt.figure(figsize=(14, 5))
 > librosa.display.waveplot(x, sr=sr)
 
-Colab에서 예제 실행하기 --> [Audio_Data_Analysis_Ex_1.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_1.ipynb){:target="_blank"}
+
