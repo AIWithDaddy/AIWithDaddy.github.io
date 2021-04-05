@@ -10,7 +10,7 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 **예제 코드** Colab에서 실행 --> [Audio_Data_Analysis_Ex_1.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_1.ipynb){:target="_blank"}
 
-> import os, shutil
+> import os, shutil{<br>}
 > from google.colab import drive
 > drive.mount('/content/gdrive')
 > os.chdir('gdrive/My Drive')
