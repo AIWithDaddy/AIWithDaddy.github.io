@@ -28,7 +28,7 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > import IPython.display as ipd
 > ipd.Audio(audio_data)
 >
-> # 오디오 시각화 예
+> #오디오 시각화 예
 > %matplotlib inline
 > import matplotlib.pyplot as plt
 > import librosa.display
