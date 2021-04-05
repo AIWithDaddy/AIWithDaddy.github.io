@@ -39,3 +39,29 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > import librosa.display<br>
 > plt.figure(figsize=(14, 5))<br>
 > librosa.display.waveplot(x, sr=sr)<br>
+
+**2. Spectrogram**
+
+1) Spectrogram은 신호의 세기(loudness)를 표현하는 방법 중 하나이다.
+
+2) x축은 시간, y축은 주파수이며, 보통 히트맵(heatmap)으로 표현된다.
+
+3) 아래는 librosa를 이용해 spectogram을 생성하고 보여주는 예이다.
+
+> import os, shutil<br>
+> from google.colab import drive<br>
+> drive.mount('/content/gdrive')<br>
+> os.chdir('gdrive/My Drive')<br>
+> %cd Test/Audio/<br>
+><br>
+> import librosa<br>
+> audio_data = 'rain.wav'<br>
+> x , sr = librosa.load(audio_data, sr=44100)<br>
+><br>
+> X = librosa.stft(x)<br>
+> Xdb = librosa.amplitude_to_db(abs(X))<br>
+> plt.figure(figsize=(14, 5))<br>
+> librosa.display.specshow(Xdb, sr=sr, x_axis='time', y_axis='hz')<br>
+> plt.colorbar()<br>
+
+
