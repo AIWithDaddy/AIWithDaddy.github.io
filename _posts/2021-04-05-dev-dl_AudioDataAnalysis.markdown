@@ -64,3 +64,5 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > plt.figure(figsize=(14, 5))<br>
 > librosa.display.specshow(Xdb, sr=sr, x_axis='time', y_axis='hz')<br>
 > plt.colorbar()<br>
+
+  ![Spectrogram 표시](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_1.jpg)
