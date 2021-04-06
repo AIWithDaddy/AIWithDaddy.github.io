@@ -71,3 +71,9 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > #Saving the audio<br>
 > import soundfile<br>
 > soundfile.write('test_220.wav', x, sr)<br>
+
+**4. 오디오 신호 주요 특성(feature) 추출**
+
+1) 오디오 데이터에 DL을 적용함에 있어 특정 응용이나 성능 향상 등을 위해 데이터 전처리나 특성 추출이 선행되는 경우가 많음
+
+2) 
