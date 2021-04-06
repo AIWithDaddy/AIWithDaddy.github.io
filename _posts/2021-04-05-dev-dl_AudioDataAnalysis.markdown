@@ -17,11 +17,10 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 3) 예제 코드 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_1.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_1.ipynb){:target="_blank"})
 
-> #librosa --> wav 파일에서 오디오 데이터를 읽어들임 (numpy 배열과 샘플링 레이트 값을 리턴)<br>
+> #librosa<br>
 > import librosa<br>
 > audio_data = 'rain.wav'<br>
-> x , sr = librosa.load(audio_data, sr=44100)<br>
-> print(type(x), type(sr))<br>
+> x , sr = librosa.load(audio_data, sr=44100) --> wav 파일에서 오디오 데이터를 읽어들임 (numpy 배열과 샘플링 레이트 값을 리턴)<br>
 ><br>
 > #IPython.display.Audio<br>
 > import IPython.display as ipd<br>
