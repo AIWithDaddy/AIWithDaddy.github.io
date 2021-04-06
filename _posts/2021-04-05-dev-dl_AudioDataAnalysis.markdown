@@ -17,12 +17,6 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 3) 예제 코드 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_1.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_1.ipynb){:target="_blank"})
 
-> import os, shutil<br>
-> from google.colab import drive<br>
-> drive.mount('/content/gdrive')<br>
-> os.chdir('gdrive/My Drive')<br>
-> %cd Test/Audio/<br>
-><br>
 > #librosa --> wav 파일에서 오디오 데이터를 읽어들임 (numpy 배열과 샘플링 레이트 값을 리턴)<br>
 > import librosa<br>
 > audio_data = 'rain.wav'<br>
@@ -48,12 +42,6 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 3) 아래는 librosa를 이용해 spectogram을 생성하고 보여주는 예이다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_2.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_2.ipynb){:target="_blank"}).
 
-> import os, shutil<br>
-> from google.colab import drive<br>
-> drive.mount('/content/gdrive')<br>
-> os.chdir('gdrive/My Drive')<br>
-> %cd Test/Audio/<br>
-><br>
 > import librosa, librosa.display<br>
 > audio_data = 'rain.wav'<br>
 > x , sr = librosa.load(audio_data, sr=44100)<br>
@@ -66,3 +54,21 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > plt.colorbar()<br>
 
   ![Spectrogram 표시](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_1.jpg)
+
+**3. 임의의 오디오 신호 생성 예**
+
+필요 시 아래 예와 같은 방법으로 임의의 오디오 신호를 생성할 수 있다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_3.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_3.ipynb){:target="_blank"}).
+
+> import numpy as np<br>
+> sr = 22050 # sample rate<br>
+> T = 5.0    # seconds<br>
+> t = np.linspace(0, T, int(T*sr), endpoint=False) # time variable<br>
+> x = 0.5 * np.sin(2 * np.pi * 220 * t)# pure sine wave at 220 Hz<br>
+> <br>
+> #Playing the audio<br>
+> import IPython.display as ipd<br>
+> ipd.Audio(x, rate=sr) # load a NumPy array<br>
+> <br>
+> #Saving the audio<br>
+> import soundfile<br>
+> soundfile.write('test_220.wav', x, sr)<br>
