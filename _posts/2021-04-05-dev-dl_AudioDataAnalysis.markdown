@@ -32,6 +32,8 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > plt.figure(figsize=(14, 5))<br>
 > librosa.display.waveplot(x, sr=sr)<br>
 
+  ![오디오 시각화](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_1.jpg)
+
 **2. Spectrogram**
 
 1) Spectrogram은 신호의 세기(loudness)를 표현하는 방법 중 하나이다.
@@ -51,7 +53,7 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > librosa.display.specshow(Xdb, sr=sr, x_axis='time', y_axis='hz')<br>
 > plt.colorbar()<br>
 
-  ![Spectrogram 표시](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_1.jpg)
+  ![Spectrogram 표시](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_2.jpg)
 
 **3. 임의의 오디오 신호 생성 예**
 
@@ -104,3 +106,5 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > #Plotting the Spectral Centroid along the waveform<br>
 > librosa.display.waveplot(x, sr=sr, alpha=0.4)<br>
 > plt.plot(t, normalize(spectral_centroids), color='b')<br>
+
+  ![Spectral Centrold](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_1.jpg)
