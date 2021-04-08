@@ -76,5 +76,30 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 1) 오디오 데이터에 DL을 적용함에 있어 특정 응용이나 성능 향상 등을 위해 데이터 전처리나 특성 추출이 선행되는 경우가 많다.
 
-2) 분광 특성들(Spectral Features)
+**2) 분광 특성들(Spectral Features)**
   분광 특성은 주파수 기반 특성으로 시간 기반의 원(raw) 신호 데이터를 푸리에 변환(Fourier Transfrom)을 이용해 주파수 기반의 데이터로 변경한 후, 특정 필요(해석/분석/판단)에 사용될 수 있는 다양한 특성 값을 산출할 수 있다. 예를 들면 기본 주파수(fundamental freqeuncy), 주파수 요소(frequency components), 분광 중심(spectral centroid), 분광 플럭스(spectral flux), 분광 밀도(spectral density), 분광 롤오프(spectral roll-off) 등이다.
+  
+- **Spectral Centroid**
+  스팩트럼 에너지의 중심이 어떤 주파수에 위치해 있는지는 보여준다. 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_4.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_4.ipynb){:target="_blank"})
+
+> import librosa, librosa.display<br>
+> audio_data = 'rain.wav'<br>
+> x , sr = librosa.load(audio_data, sr=44100)<br>
+> <br>
+> import sklearn<br>
+> spectral_centroids = librosa.feature.spectral_centroid(x, sr=sr)[0]<br>
+> spectral_centroids.shape<br>
+> <br>
+> # Computing the time variable for visualization<br>
+> import matplotlib.pyplot as plt<br>
+> plt.figure(figsize=(12, 4))<br>
+> frames = range(len(spectral_centroids))<br>
+> t = librosa.frames_to_time(frames)<br>
+> <br>
+> # Normalising the spectral centroid for visualisation<br>
+> def normalize(x, axis=0):<br>
+>     return sklearn.preprocessing.minmax_scale(x, axis=axis)<br>
+> <br>
+> # Plotting the Spectral Centroid along the waveform<br>
+> librosa.display.waveplot(x, sr=sr, alpha=0.4)<br>
+> plt.plot(t, normalize(spectral_centroids), color='b')<br>
