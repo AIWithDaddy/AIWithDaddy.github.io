@@ -108,3 +108,6 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > plt.plot(t, normalize(spectral_centroids), color='b')<br>
 
   ![Spectral Centrold](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_3.jpg)
+
+- **Spectral Rolloff**
+
