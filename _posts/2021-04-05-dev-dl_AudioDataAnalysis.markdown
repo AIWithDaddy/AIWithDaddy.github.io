@@ -90,16 +90,16 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > spectral_centroids = librosa.feature.spectral_centroid(x, sr=sr)[0]<br>
 > spectral_centroids.shape<br>
 > <br>
-> # Computing the time variable for visualization<br>
+> #Computing the time variable for visualization<br>
 > import matplotlib.pyplot as plt<br>
 > plt.figure(figsize=(12, 4))<br>
 > frames = range(len(spectral_centroids))<br>
 > t = librosa.frames_to_time(frames)<br>
 > <br>
-> # Normalising the spectral centroid for visualisation<br>
+> #Normalising the spectral centroid for visualisation<br>
 > def normalize(x, axis=0):<br>
 >     return sklearn.preprocessing.minmax_scale(x, axis=axis)<br>
 > <br>
-> # Plotting the Spectral Centroid along the waveform<br>
+> #Plotting the Spectral Centroid along the waveform<br>
 > librosa.display.waveplot(x, sr=sr, alpha=0.4)<br>
 > plt.plot(t, normalize(spectral_centroids), color='b')<br>
