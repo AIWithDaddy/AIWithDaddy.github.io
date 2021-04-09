@@ -112,3 +112,6 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
   ![Spectral Centrold](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_3.jpg)
 
 - **Spectral Rolloff**
+
+	- Sub Spectral RollOff는 주파수 대역에서 에너지의 누적치(accumulated magnitude)가 특정된 값에(보통 85%를 사용) 이르는 지점이다.
+	- Sub 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_5.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_5.ipynb){:target="_blank"})
