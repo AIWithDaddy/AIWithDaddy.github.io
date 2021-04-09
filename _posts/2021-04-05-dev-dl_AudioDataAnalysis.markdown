@@ -83,9 +83,9 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
   
 - **Spectral Centroid**
 
-- Sub 스팩트럼 에너지의 중심이 어떤 주파수에 위치해 있는지는 보여준다. 
-- Sub Spectral Centroid는 소리의 밝기(brightness)와 관계가 있다. 
-- Sub 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_4.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_4.ipynb){:target="_blank"})
+ - Sub 스팩트럼 에너지의 중심이 어떤 주파수에 위치해 있는지는 보여준다. 
+ - Sub Spectral Centroid는 소리의 밝기(brightness)와 관계가 있다. 
+ - Sub 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_4.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_4.ipynb){:target="_blank"})
 
 > import librosa, librosa.display<br>
 > audio_data = 'rain.wav'<br>
