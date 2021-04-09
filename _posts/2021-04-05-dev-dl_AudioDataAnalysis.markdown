@@ -83,9 +83,9 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
   
 - **Spectral Centroid**
 
-	- Sub 스팩트럼 에너지의 중심이 어떤 주파수에 위치해 있는지는 보여준다. 
-	- Sub Spectral Centroid는 소리의 밝기(brightness)와 관계가 있다. 
-	- Sub 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_4.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_4.ipynb){:target="_blank"})
+	- 스팩트럼 에너지의 중심이 어떤 주파수에 위치해 있는지는 보여준다. 
+	- Spectral Centroid는 소리의 밝기(brightness)와 관계가 있다. 
+	- 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_4.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_4.ipynb){:target="_blank"})
 
 > import librosa, librosa.display<br>
 > audio_data = 'rain.wav'<br>
@@ -112,8 +112,8 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 - **Spectral Rolloff**
 
-	- Sub Spectral RollOff는 주파수 대역에서 에너지의 누적치(accumulated magnitude)가 지정된 값에(보통 85%를 사용) 이르는 지점이다.
-	- Sub 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_5.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_5.ipynb){:target="_blank"})
+	- Spectral RollOff는 주파수 대역에서 에너지의 누적치(accumulated magnitude)가 지정된 값에(보통 85%를 사용) 이르는 지점이다.
+	- 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_5.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_5.ipynb){:target="_blank"})
     
 
 > import librosa, librosa.display<br>
@@ -141,11 +141,11 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 - **Spectral Bandwidth**
 
-	- Sub Spectral Bandwidth는 피크 최대(peak maximum)의 절반이 되는 지점에서의 대역 넓이로 정의된다.
+	- Spectral Bandwidth는 피크 최대(peak maximum)의 절반이 되는 지점에서의 대역 넓이로 정의된다.
 
   ![Spectral Bandwidth Definition](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_5.jpg)    
 
-	- Sub 다음은 order-p Spectral Bandwidth를 구하는 예이다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_6.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_6.ipynb){:target="_blank"})
+	- 다음은 order-p Spectral Bandwidth를 구하는 예이다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_6.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_6.ipynb){:target="_blank"})
 
 > import librosa, librosa.display<br>
 > audio_data = 'rain.wav'<br>
