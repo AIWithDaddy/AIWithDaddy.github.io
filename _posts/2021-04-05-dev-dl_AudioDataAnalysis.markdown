@@ -139,3 +139,38 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
   ![Spectral Rolloff](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_4.jpg)
 
+- **Spectral Bandwidth**
+
+	- Sub Spectral Bandwidth는 피크 최대(peak maximum)의 절반이 되는 지점에서의 대역 넓이로 정의된다.
+
+  ![Spectral Bandwidth Definition](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_5.jpg)    
+
+	- Sub 다음은 order-p Spectral Bandwidth를 구하는 예이다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_6.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_6.ipynb){:target="_blank"})
+
+> import librosa, librosa.display<br>
+> audio_data = 'rain.wav'<br>
+> x , sr = librosa.load(audio_data, sr=44100)<br>
+> <br>
+> import sklearn<br>
+> spectral_bandwidth_2 = librosa.feature.spectral_bandwidth(x+0.01, sr=sr)[0]<br>
+> spectral_bandwidth_3 = librosa.feature.spectral_bandwidth(x+0.01, sr=sr, p=3)[0]<br>
+> spectral_bandwidth_4 = librosa.feature.spectral_bandwidth(x+0.01, sr=sr, p=4)[0]<br>
+> <br>
+> #Computing the time variable for visualization<br>
+> import matplotlib.pyplot as plt<br>
+> plt.figure(figsize=(15, 9))<br>
+> frames = range(len(spectral_bandwidth_2))<br>
+> t = librosa.frames_to_time(frames)<br>
+> <br>
+> #Normalising for visualisation<br>
+> def normalize(x, axis=0):<br>
+>     return sklearn.preprocessing.minmax_scale(x, axis=axis)<br>
+> <br>
+> #Plotting the Spectral Bandwidth along the waveform<br>
+> librosa.display.waveplot(x, sr=sr, alpha=0.4)<br>
+> plt.plot(t, normalize(spectral_bandwidth_2), color='r')<br>
+> plt.plot(t, normalize(spectral_bandwidth_3), color='g')<br>
+> plt.plot(t, normalize(spectral_bandwidth_4), color='y')<br>
+> plt.legend(('p = 2', 'p = 3', 'p = 4'))<br>
+
+  ![Spectral Bandwidth](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_6.jpg)
