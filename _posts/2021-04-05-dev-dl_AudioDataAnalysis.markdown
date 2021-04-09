@@ -93,7 +93,6 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > <br>
 > import sklearn<br>
 > spectral_centroids = librosa.feature.spectral_centroid(x, sr=sr)[0]<br>
-> spectral_centroids.shape<br>
 > <br>
 > #Computing the time variable for visualization<br>
 > import matplotlib.pyplot as plt<br>
@@ -101,7 +100,7 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > frames = range(len(spectral_centroids))<br>
 > t = librosa.frames_to_time(frames)<br>
 > <br>
-> #Normalising the spectral centroid for visualisation<br>
+> #Normalising for visualisation<br>
 > def normalize(x, axis=0):<br>
 >     return sklearn.preprocessing.minmax_scale(x, axis=axis)<br>
 > <br>
@@ -113,5 +112,30 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 
 - **Spectral Rolloff**
 
-	- Sub Spectral RollOff는 주파수 대역에서 에너지의 누적치(accumulated magnitude)가 특정된 값에(보통 85%를 사용) 이르는 지점이다.
+	- Sub Spectral RollOff는 주파수 대역에서 에너지의 누적치(accumulated magnitude)가 지정된 값에(보통 85%를 사용) 이르는 지점이다.
 	- Sub 이를 구하는 예는 다음과 같다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_5.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_5.ipynb){:target="_blank"})
+    
+
+> import librosa, librosa.display<br>
+> audio_data = 'rain.wav'<br>
+> x , sr = librosa.load(audio_data, sr=44100)<br>
+> <br>
+> import sklearn<br>
+> spectral_rolloff = librosa.feature.spectral_centroid(x, sr=sr)[0]<br>
+> <br>
+> #Computing the time variable for visualization<br>
+> import matplotlib.pyplot as plt<br>
+> plt.figure(figsize=(12, 4))<br>
+> frames = range(len(spectral_rolloff))<br>
+> t = librosa.frames_to_time(frames)<br>
+> <br>
+> #Normalising for visualisation<br>
+> def normalize(x, axis=0):<br>
+>     return sklearn.preprocessing.minmax_scale(x, axis=axis)<br>
+> <br>
+> #Plotting the Spectral Rolloff along the waveform<br>
+> librosa.display.waveplot(x, sr=sr, alpha=0.4)<br>
+> plt.plot(t, normalize(spectral_rolloff), color='b')<br>
+
+  ![Spectral Rolloff](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_4.jpg)
+
