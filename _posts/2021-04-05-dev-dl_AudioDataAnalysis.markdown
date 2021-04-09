@@ -174,3 +174,9 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > plt.legend(('p = 2', 'p = 3', 'p = 4'))<br>
 
   ![Spectral Bandwidth](https://AIWithDaddy.github.io/assets/img/dev/dl/2021-04-05-dev-dl-AudioDataAnalysis_6.jpg)
+
+- **MFCCs(Mel-Frequency Cepstral Coefficients)**
+
+	- 소리에 대한 인간의 인지적 특성을 반영한 Mel 스케일에 따라 STFT의 스펙트럼 크기를 변환한 것이다
+
+	- 다음은 MFCCs를 구하는 예이다 (Colab에서 실행 --> [Audio_Data_Analysis_Ex_7.ipynb](https://colab.research.google.com/github/AIWithDaddy/AIWithDaddy.github.io/blob/master/code/Audio_Data_Analysis_Ex_7.ipynb){:target="_blank"})
