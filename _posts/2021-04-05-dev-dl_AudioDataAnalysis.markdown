@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[자료] DL을 이용한 오디오 데이터 분석'
-subtitle: Audio Data Analysis
+title: '[자료] DL을 이용한 오디오 데이터 분석 #1'
+subtitle: Audio Data Analysis #1
 categories: dev
 tags: dl audio signal python
 published: true
