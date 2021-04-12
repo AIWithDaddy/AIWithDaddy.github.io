@@ -207,7 +207,7 @@ DL을 이용해 오디오 데이터를 분석하는 것에 대한 자료이며, 
 > <br>
 > chromagram = librosa.feature.chroma_stft(x, sr=sr)<br>
 > <br>
-> #Displaying  the MFCCs<br>
+> #Displaying the Chroma Feature<br>
 > import matplotlib.pyplot as plt<br>
 > plt.figure(figsize=(15, 5))<br>
 > librosa.display.specshow(chromagram, x_axis='time', y_axis='chroma', cmap='coolwarm')<br>
